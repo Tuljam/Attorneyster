@@ -1,0 +1,129 @@
+.header-attornest {
+    background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+    position: relative;
+   
+    .container {
+        border: 3px solid red;
+
+    }
+    &__logo-block {
+        padding: 41px 0;
+        border-bottom: 1px solid #4E555F;
+        display: flex;
+        justify-content:space-between;
+
+
+    }
+    &__logo {
+
+        &__logo-img {
+            padding: 10px;
+        }
+    }
+    
+    &__main-block {
+        display: flex;
+        width: 100%;
+        padding: 45px 0;
+        border-bottom: 1px solid #4E555F;
+
+    }
+
+    &__nav{
+        &--wrapp {
+        width: 59%;
+        }
+        
+        &-list {
+        display: flex;
+        align-items: center;
+        }
+        
+        &-item {
+            padding: 15px;
+            margin-right: 46px;
+        }
+        &-item:last-child {
+            margin-right: 0;
+        }
+        
+        &-link {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        } 
+       
+         
+    }
+}
+.header-attornest__info-block {
+    display:flex;
+    align-items:center;
+    width: 40%;
+
+}
+.header-info {
+    &__item {
+        width: 50%;
+        display: flex;
+        align-items:center;
+
+
+    }
+    &--wrap  {
+
+    }
+    &__item-phone {
+        display: flex;
+
+    }
+    &__icon--wrap {
+
+    }
+    &__block-circle {
+        width: 62px;
+        height: 62px;
+        position: relative;
+        border: 2px solid #D1B06B;
+        border-radius: 100px;
+
+
+    }
+    &__icon {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 18px;
+
+    }
+    &__descr--wrap {
+        padding: 10px;
+        
+        
+    }
+    &__text {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        color: #D1B06B;
+
+    }
+    &__phone-number, &__email {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+
+    }
+}
+
+.active {
+    color:#D1B06B;
+}

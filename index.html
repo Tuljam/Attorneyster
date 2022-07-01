@@ -5,23 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles/main.scss">
+
     <link rel="stylesheet" href="./libs/normolize.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    
 </head>
 <body>
     <header class="header-attornest">
         <div class="container">
-            <div class="header-attornest__logo--wrapp">
+            <div class="header-attornest__logo-block">
                 <div class="header-attornest__logo">
-                    <img src="" alt="" class="header-attornest__logo-imgPart-one">
-                    <img src="" alt="" class="header-attornest__logo-imgPart-second">
+                    <img class="header-attornest__logo-img" src="./assets/images/logo_and_fon/logo.png" alt="logo-img" >;
                 </div>
+                    <button class="button button--grey button--header"> Book A Consultation </button>
             </div>
-            <div class="header-attornest__nav--wrapp">
-            </div>
+            <div class="header-attornest__main-block"> 
+            <nav class="header-attornest__nav--wrapp" >
+                <ul class="header-attornest__nav-list" >
+                    <li class="header-attornest__nav-item" >
+                        <a class="header-attornest__nav-link active" href="#">Home </a>
+                    </li>
+                    <li class="header-attornest__nav-item" >
+                        <a class="header-attornest__nav-link" href="#">HomeAbout Us </a>
+                    </li>
+                    <li class="header-attornest__nav-item" >
+                        <a class="header-attornest__nav-link" href="#">Pages </a>
+                    </li>
+                    <li class="header-attornest__nav-item" >
+                        <a class="header-attornest__nav-link" href="#">Contact Us </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-attornest__info-block"> 
+                    <div class="header-info__item">
+                        <div class="header-info__icon--wrap">
+                            <div class="header-info__block-circle">
+                                <svg class="header-info__icon" name="phone_icon" width="100%" height="100%" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_header2_38)">
+                                <path d="M16.9602 12.8312C16.7621 12.6202 16.0627 11.9964 14.7771 11.171C13.4819 10.3385 12.5268 9.81934 12.2528 9.69829C12.2287 9.68758 12.2021 9.68365 12.1759 9.68692C12.1496 9.6902 12.1248 9.70056 12.1041 9.71688C11.6627 10.0611 10.9197 10.6933 10.8799 10.7274C10.6226 10.9479 10.6226 10.9479 10.412 10.8792C10.0416 10.7578 8.89106 10.1468 7.88848 9.14198C6.88591 8.13714 6.24346 6.95812 6.12203 6.58814C6.05259 6.37715 6.05259 6.37715 6.27382 6.11987C6.30797 6.08003 6.94056 5.33702 7.28474 4.89608C7.30106 4.87531 7.31142 4.85049 7.3147 4.82428C7.31797 4.79807 7.31404 4.77147 7.30334 4.74732C7.18228 4.47296 6.66316 3.51821 5.83059 2.22308C5.0041 0.937808 4.381 0.238443 4.17001 0.0403585C4.15065 0.0220881 4.12672 0.00937816 4.10074 0.00356797C4.07476 -0.00224222 4.0477 -0.0009375 4.0224 0.00734453C3.28488 0.260788 2.57329 0.584178 1.89734 0.973099C1.24481 1.35243 0.627029 1.78862 0.0512005 2.27658C0.0310996 2.29367 0.0160296 2.31591 0.0076063 2.34091C-0.000816951 2.36591 -0.00227558 2.39274 0.00338675 2.41851C0.0826969 2.78811 0.461792 4.33104 1.63816 6.46823C2.83844 8.64943 3.67025 9.76697 5.43291 11.5235C7.19556 13.2801 8.34841 14.162 10.5319 15.3623C12.6691 16.5386 14.2128 16.9181 14.5817 16.9967C14.6075 17.0023 14.6343 17.0008 14.6594 16.9924C14.6844 16.984 14.7068 16.9689 14.724 16.9488C15.2118 16.373 15.6479 15.7553 16.0271 15.1027C16.4159 14.4267 16.7393 13.7152 16.9928 12.9777C17.0009 12.9526 17.0022 12.9258 16.9965 12.9C16.9907 12.8742 16.9782 12.8505 16.9602 12.8312Z" fill="#CCAA60"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_38">
+                                <rect width="17" height="17" fill="white"/>
+                                </clipPath>
+                                </defs> 
+                                </svg>
+                            </div> 
+                        </div>
+                        <div class="header-info__descr--wrap">
+                            <p class="header-info__text">Call Us On:</p>
+                            <p class="header-info__phone-number">911-987654321</p>
+                        </div>
+                    </div>
+                    <div class="header-info__item">
+                        <div class="header-info__icon--wrap">
+                            <div class="header-info__block-circle">
+                                <svg class="header-info__icon" name="letter_icon" width="100%" height="100%" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3571 0.800049H0.642857C0.472361 0.800049 0.308848 0.86901 0.188288 0.991761C0.0677294 1.11451 0 1.281 0 1.45459V14.5455C0 14.7191 0.0677294 14.8856 0.188288 15.0083C0.308848 15.1311 0.472361 15.2 0.642857 15.2H17.3571C17.5276 15.2 17.6912 15.1311 17.8117 15.0083C17.9323 14.8856 18 14.7191 18 14.5455V1.45459C18 1.281 17.9323 1.11451 17.8117 0.991761C17.6912 0.86901 17.5276 0.800049 17.3571 0.800049ZM9.39455 9.17128C9.28173 9.26058 9.1429 9.30906 9 9.30906C8.8571 9.30906 8.71827 9.26058 8.60545 9.17128L2.31228 4.18773L3.10138 3.15437L9 7.82537L14.8986 3.15437L15.6877 4.18773L9.39455 9.17128Z" fill="#CCAA60"/>
+                                    </svg>
+                                    
+                            </div> 
+                        </div>
+                        <div class="header-info__descr--wrap">
+                            <p class="header-info__text">Email Us On::</p>
+                        <p class="header-info__email">yourmail@mail.com</p>
+                        </div>
+                    </div>
+                </div>
         </div>
 
     </header>
+    <section banner>
+        <div class="container">
+            <div class="banner-descr">
+                <div class="banner-descr__icon">
+
+                </div>
+                <h1 class="banner-title">We're Group Of Certified Law Professionals</h1>
+                <p class="banner-descr__text">we have helped countless maritime workers and their families go up against the largest offshore companies and win.</p>
+            </div>
+            <div class="banner-photo">
+
+            </div>
+        </div>
+
+        
+    </section>
         
 
     

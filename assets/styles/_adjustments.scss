@@ -1,0 +1,41 @@
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+.container {
+    // width: var(--large-container);
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 2px solid blueviolet;
+
+}
