@@ -1,9 +1,16 @@
-.header-attornest {
+.header-banner--wrapper {
+    height: 100vh;
     background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
-   
+}
+
+.header-attornest {
+       
     .container {
-        border: 3px solid red;
+        border: none
+
 
     }
     &__logo-block {

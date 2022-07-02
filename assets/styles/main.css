@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Outfit&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -52,18 +53,38 @@ a {
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0.4px;
+  text-align: center;
   color: #FFFFFF;
 }
 .button--grey {
   background: rgba(155, 139, 139, 0.575);
 }
+.button--oliv {
+  width: 269px;
+  height: 85px;
+  background: #D1B06B;
+  font-family: "Outfit";
+  line-height: 35px;
+  color: #1F2732;
+}
 
-.header-attornest {
+.frame {
+  width: 95px;
+  height: 44px;
+  border-radius: 0px;
+  margin-bottom: 14px;
+}
+
+.header-banner--wrapper {
+  height: 100vh;
   background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-position: center;
+  background-size: cover;
   position: relative;
 }
+
 .header-attornest .container {
-  border: 3px solid red;
+  border: none;
 }
 .header-attornest__logo-block {
   padding: 41px 0;
@@ -173,4 +194,44 @@ a {
 
 .active {
   color: #D1B06B;
+}
+
+.banner__block-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 10px;
+}
+.banner-item__info {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  padding-top: 130px;
+}
+.banner-item__photo {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  background: transparent;
+  padding-top: 15px;
+}
+.banner-item__img {
+  max-width: 100%;
+  min-height: 100%;
+}
+.banner-item__descr-title {
+  font-family: "Cormorant Garamond";
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 78px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin-bottom: 21px;
+}
+.banner-item__descr-text {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  color: #D1B06B;
+  margin-bottom: 28px;
 }/*# sourceMappingURL=main.css.map */

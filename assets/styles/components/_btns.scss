@@ -6,9 +6,25 @@
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.4px;
+    text-align: center;
     color: #FFFFFF;
 
     &--grey {
         background:rgba(155, 139, 139, 0.575);
     }
+    &--oliv {
+    width: 269px;
+    height: 85px;
+    background: #D1B06B;
+    font-family: 'Outfit';
+    line-height: 35px;
+    color: #1F2732;}
+
 }
+.frame {
+    width: 95px;
+    height: 44px;
+    border-radius: 0px;
+    margin-bottom: 14px;
+}
+

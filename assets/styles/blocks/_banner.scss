@@ -1,0 +1,63 @@
+.banner {
+        // height: 100vh;
+        // background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+        // background-position: center;
+        // background-size: cover;
+    .container {
+
+    }
+    &__block-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 10px;
+    }
+    &-item {
+
+        &__info{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding-top: 130px;
+    }
+        &__photo {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        background: transparent;
+        padding-top: 15px;
+    }
+        &__img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
+        &__descr-title {
+        font-family: 'Cormorant Garamond';
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 78px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        margin-bottom: 21px;
+        }
+        &__descr-text {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0.4px;
+        color: #D1B06B;
+        margin-bottom: 28px;
+}
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
