@@ -1,0 +1,76 @@
+.history-specialised {
+    .container {
+        background: url(../images/background_history.jpg);
+        background-size: cover;
+        
+        padding: 140px 40px;
+    }
+}
+.history-specialised--wrap {
+    background:rgba(31, 39, 50, 0.85);
+    @include flexCenter;
+}
+.history-block {
+    width: 40%;
+    padding: 90px 60px 102px 60px;
+
+    &_title {
+        // @include fontH4Cormorant (45px);
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 59px;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+    }
+    &_descr {
+        font-family: $fontOutfit;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: capitalize;
+        margin-bottom: 32px;
+        color: #D7D7D7;
+
+
+    }
+        &_descr--oliv {
+        color: #D1B06B;
+        margin-bottom: 13px;
+        }
+
+}
+ 
+    
+.history-specialised__main-picture--wrap {
+    width: 20%;
+    height: 100%;
+    background: url(../images/background-fon.jpg);
+   
+
+    }
+.specialised-block {
+    padding: 90px 50px 102px 90px;
+    width: 40%;
+
+    &__title {
+    font-family: $fontCormorant;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    }
+    &_descr {
+        font-family: $fontOutfit;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    color: #D7D7D7;
+    }
+
+}

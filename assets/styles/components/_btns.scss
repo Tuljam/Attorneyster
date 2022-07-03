@@ -3,6 +3,7 @@
     width: 350px;
     height: 85px;
     border: none;
+    font-family: $fontOutfit;
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.4px;
@@ -17,7 +18,13 @@
     height: 85px;
     background: #D1B06B;
     font-family: 'Outfit';
-    line-height: 35px;
+
+  
+    }
+    &--history {
+    width: 302px;
+    height: 85px;
+    background: #D1B06B;
     color: #1F2732;
     }
 
@@ -33,7 +40,7 @@
     width: 95px;
     height: 44px;
     border-radius: 0px;
-    margin-bottom: 14px;
+    margin-bottom: 60px;
     display: block;
 
     &--in-center {

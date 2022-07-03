@@ -21,14 +21,14 @@
         grid-column-start: 1;
         padding: 125px 0 10px 0 ;
 
-            }
+    }
 .practice-area__title  {
     font-family: $fontCormorant;
     font-weight: 400;
     font-size: 45px;
     letter-spacing: 0.4px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    @include color(white);
     margin-bottom: 19px;
 
 }

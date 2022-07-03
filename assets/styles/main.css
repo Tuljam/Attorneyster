@@ -50,6 +50,7 @@ a {
   width: 350px;
   height: 85px;
   border: none;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0.4px;
@@ -64,7 +65,11 @@ a {
   height: 85px;
   background: #D1B06B;
   font-family: "Outfit";
-  line-height: 35px;
+}
+.button--history {
+  width: 302px;
+  height: 85px;
+  background: #D1B06B;
   color: #1F2732;
 }
 .button__list-view {
@@ -77,7 +82,7 @@ a {
   width: 95px;
   height: 44px;
   border-radius: 0px;
-  margin-bottom: 14px;
+  margin-bottom: 60px;
   display: block;
 }
 .frame--in-center {
@@ -420,7 +425,7 @@ a {
   font-size: 45px;
   letter-spacing: 0.4px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 19px;
 }
 .practice-area .practice-area__item-info--wrap {
@@ -569,7 +574,7 @@ a {
 }
 
 .partners .container {
-  padding: 80px 110px 130px 100px;
+  padding: 80px 110px 70px 100px;
 }
 .partners__title--wrap {
   display: -webkit-box;
@@ -578,9 +583,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .partners__title {
   margin: 0 40px;
@@ -605,4 +607,78 @@ a {
 }
 .partners__item {
   padding: 45px;
+}
+.history-specialised .container {
+  background: url(../images/background_history.jpg);
+  background-size: cover;
+  padding: 140px 40px;
+}
+
+.history-specialised--wrap {
+  background: rgba(31, 39, 50, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.history-block {
+  width: 40%;
+  padding: 90px 60px 102px 60px;
+}
+.history-block_title {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 59px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.history-block_descr {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+  color: #D7D7D7;
+}
+.history-block_descr--oliv {
+  color: #D1B06B;
+  margin-bottom: 13px;
+}
+
+.history-specialised__main-picture--wrap {
+  width: 20%;
+  height: 100%;
+  background: url(../images/background-fon.jpg);
+}
+
+.specialised-block {
+  padding: 90px 50px 102px 90px;
+  width: 40%;
+}
+.specialised-block__title {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.specialised-block_descr {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  color: #D7D7D7;
 }/*# sourceMappingURL=main.css.map */

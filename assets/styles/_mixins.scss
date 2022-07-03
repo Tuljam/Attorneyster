@@ -1,0 +1,17 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin color ($color) {
+    color: $color;
+}
+
+@mixin fontH4Cormorant ($fontSize)  {
+    font-family: $fontCormorant;
+    font-size: $fontSize;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: $colorWtite;
+}
