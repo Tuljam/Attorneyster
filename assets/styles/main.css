@@ -80,8 +80,12 @@ a {
   margin-bottom: 14px;
   display: block;
 }
-.frame-center {
+.frame--in-center {
   margin: 11px auto 40px auto;
+}
+.frame-center {
+  width: 95px;
+  height: 80px;
 }
 
 .separator {
@@ -481,6 +485,9 @@ a {
   letter-spacing: 0.4px;
   color: #909090;
 }
+.results__description-text-second {
+  margin-bottom: 60px;
+}
 .results__items {
   width: 100%;
   display: -webkit-box;
@@ -501,6 +508,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.results__list--darkFon {
+  background: url(../images/parnners_fon-button.png);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .results__list-picture--wrap {
   width: 118px;
   height: 120px;
@@ -508,10 +521,14 @@ a {
   padding-top: 35px;
   text-align: center;
 }
-.results__list-icon--heart {
+.results__list-icon {
   width: 22px;
   height: 20px;
   color: #D1B06B;
+}
+.results__list-icon--star {
+  width: 25px;
+  height: 24px;
 }
 .results__list-quantity {
   font-family: "Outfit", sans-serif;
@@ -523,6 +540,9 @@ a {
 .results__list-client {
   padding: 5px 25px;
 }
+.results__list-client--darkFon {
+  padding: 5px 65px 5px 35px;
+}
 
 .list-client__title {
   font-family: "Cormorant", sans-serif;
@@ -532,6 +552,9 @@ a {
   color: #1F2732;
   margin-bottom: 5px;
 }
+.list-client__title--darkFon {
+  color: #FFFFFF;
+}
 .list-client__subjest {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -540,4 +563,46 @@ a {
   letter-spacing: 0.4px;
   text-transform: capitalize;
   color: #909090;
+}
+.list-client__subjest--darkFon {
+  color: #FFFFFF;
+}
+
+.partners .container {
+  padding: 80px 110px 130px 100px;
+}
+.partners__title--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.partners__title {
+  margin: 0 40px;
+}
+.partners__title-text {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+.partners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.partners__item {
+  padding: 45px;
 }/*# sourceMappingURL=main.css.map */

@@ -36,12 +36,17 @@
     margin-bottom: 14px;
     display: block;
 
-    &-center {
+    &--in-center {
         margin: 11px auto 40px auto;
+
     }
-// .frame-center {
-//     margin: 0 auto;
-// }
+
+    &-center {
+        width: 95px;
+        height: 80px;
+        // margin: 0 auto 40px auto;
+    }
+
 }
 .separator {
     width: 320px;
