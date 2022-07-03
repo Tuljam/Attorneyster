@@ -1,0 +1,81 @@
+.practice-area {
+    background-color: #161D27;
+
+    .container {}
+
+    &__block-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 70px 35px;
+        gap: 20px 35px;
+    }
+    &__items {
+        // border: 1px dashed red;
+        background: #1F2732;
+        padding: 55px 50px 70px 50px ;
+    }
+    &__item-title--wrap {
+        background-color: #161D27;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        padding: 125px 0 10px 0 ;
+
+            }
+.practice-area__title  {
+    font-family: $fontCormorant;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+
+}
+
+.practice-area__item-info--wrap {
+    background-color: #161D27;
+    grid-row-start: 1;
+    grid-column: 2/4;
+    padding: 160px 0 10px 200px;
+}
+.practice-area__info {
+    font-family: $fontOutfit;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    color: #D7D7D7;
+
+}
+.practice-area__item-list--wrap {
+   
+    
+}
+.practice-area__list-law {}
+
+}
+
+.list-law__title {
+    font-family: $fontCormorant;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.list-law__note {
+    font-family: $fontOutfit;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    color: #D7D7D7;
+    }
+
+.practice-area__list-view {
+    display: flex;
+    justify-content: space-between;
+}
+.list-view__icon {}

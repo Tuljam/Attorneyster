@@ -18,7 +18,15 @@
     background: #D1B06B;
     font-family: 'Outfit';
     line-height: 35px;
-    color: #1F2732;}
+    color: #1F2732;
+    }
+
+    &__list-view {
+        width: 187px;
+        height: 58px;
+        background: #161D27;
+    }
+
 
 }
 .frame {
@@ -28,4 +36,10 @@
     margin-bottom: 14px;
 
 }
+.separator {
+    width: 320px;
+    height: 1px;
+    border: 1px solid #4E555F;
+    margin: 28.3px 0 56.7px 0; 
 
+}

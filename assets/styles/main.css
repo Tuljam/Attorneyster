@@ -67,6 +67,11 @@ a {
   line-height: 35px;
   color: #1F2732;
 }
+.button__list-view {
+  width: 187px;
+  height: 58px;
+  background: #161D27;
+}
 
 .frame {
   width: 95px;
@@ -75,8 +80,16 @@ a {
   margin-bottom: 14px;
 }
 
+.separator {
+  width: 320px;
+  height: 1px;
+  border: 1px solid #4E555F;
+  margin: 28.3px 0 56.7px 0;
+}
+
 .header-banner--wrapper {
-  background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 53, 71, 0.5)), to(rgba(53, 53, 71, 0.5))), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-image: linear-gradient(rgba(56, 53, 71, 0.5), rgba(53, 53, 71, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -254,6 +267,8 @@ a {
 }
 .welcome .welcome__items-descr {
   padding: 20px 15px 5px 20px;
+  grid-row-start: 1;
+  grid-column-start: 2;
 }
 .welcome .welcome__items-title {
   font-family: "Cormorant", sans-serif;
@@ -276,6 +291,8 @@ a {
   color: #D7D7D7;
 }
 .welcome .welcome__items-mainAttorney {
+  grid-row-start: 2;
+  grid-column-start: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +376,7 @@ a {
 .block-experience--blue-color {
   width: 81px;
   height: 59px;
-  background: #161D27;
+  background: #1F2732;
   padding: 15px 0 15px 0;
   border-radius: 10%;
 }
