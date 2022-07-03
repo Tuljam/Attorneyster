@@ -1,0 +1,86 @@
+.results {
+    
+    .container {
+        padding: 124px 25px 82px 25px;
+    }
+    &__description {}
+
+    &__description-title {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 45px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #161D27;
+    }
+    &__description-text {
+        font-family: $fontOutfit;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        color: #909090;
+    }
+    &__items {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }  
+    &__list {
+        width: calc(100%/3);
+        height: 180px; 
+        background: #FBFBFB;
+        display: flex;
+        justify-content: space-around;
+        align-items:center
+
+    }  
+    
+    &__list-picture--wrap {
+        width: 118px;
+        height: 120px;
+        border: 1px solid #D1B06B;
+        padding-top: 35px;
+        text-align: center;
+        }
+    &__list-icon--heart {
+        width: 22px;
+        height: 20px;
+        color:  #D1B06B;
+        
+    }
+    &__list-quantity {
+        font-family: $fontOutfit;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.4px;
+        color: #1F2732;
+    }
+    &__list-client {
+        padding: 5px 25px;
+    }
+
+}
+.list-client {
+    &__title {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.4px;
+        color: #1F2732;
+        margin-bottom: 5px;
+    }
+    &__subjest {
+        font-family: $fontOutfit;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #909090;
+    }
+}
+    
+
