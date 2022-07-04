@@ -1,7 +1,8 @@
-.history-specialised {
-    .container {
+.history-specialised {  
         background: url(../images/background_history.jpg);
         background-size: cover;
+    .container {
+     
         
         padding: 140px 40px;
     }
@@ -11,8 +12,8 @@
     @include flexCenter;
 }
 .history-block {
+    padding: 50px 60px 102px 60px;
     width: 40%;
-    padding: 90px 60px 102px 60px;
 
     &_title {
         // @include fontH4Cormorant (45px);
@@ -40,7 +41,6 @@
         color: #D1B06B;
         margin-bottom: 13px;
         }
-
 }
  
     
@@ -52,8 +52,10 @@
 
     }
 .specialised-block {
-    padding: 90px 50px 102px 90px;
+    padding: 90px 60px 102px 60px;
     width: 40%;
+    display: flex;
+    flex-direction: column;
 
     &__title {
     font-family: $fontCormorant;
@@ -63,14 +65,33 @@
     letter-spacing: 0.4px;
     text-transform: capitalize;
     color: #FFFFFF;
+    margin-bottom: 11px;
     }
-    &_descr {
-        font-family: $fontOutfit;
+    &_descr, .history-specialised__form-item {
+    font-family: $fontOutfit;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.4px;
     color: #D7D7D7;
     }
+    
 
 }
+.history-specialised { 
+    &__form--wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    }
+    &__form-item {
+        padding: 15px 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid #D1B06B;
+        margin-bottom: 40px;
+       background:rgba(31, 39, 50, 0.15);
+        
+    }
