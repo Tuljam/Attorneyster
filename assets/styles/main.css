@@ -816,7 +816,6 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-
 .answers-questions__attorney-name {
   font-family: "Cormorant", sans-serif;
   font-weight: 400;
@@ -831,4 +830,25 @@ a {
   font-size: 20px;
   letter-spacing: 0.4px;
   color: #D1B06B;
+}
+.answers-questions__media--wrap {
+  width: 217px;
+  height: 66px;
+  background: white;
+  border: 1px solid aqua;
+  position: relative;
+  bottom: 136px;
+  left: 120px;
+}
+.answers-questions .answers-questions__media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
