@@ -1,0 +1,100 @@
+.revies {
+    background: $colorBlueDark;
+    .container {
+        padding: 120px 0 212px;
+    }
+
+    &__title--wrap {
+       
+    }
+    &__title {
+            font-family: $fontCormorant;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.4px;
+            color: #FFFFFF;
+        }
+    &__block-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    &__items {
+        // border: 1px dashed red;
+        &-clientNatasha {
+            grid-row-start: 1;
+            grid-column: 1;
+        }
+        &-clientHanna {
+            grid-row-start: 1;
+            grid-column: 2;
+        }
+        &-clientPhillip {
+            grid-row-start: 1;
+            grid-column: 3;
+        }
+        &-clientJoshua {
+            grid-row-start: 1;
+            grid-column: 4;
+        }
+         
+        &-post--wrap {
+            background: $colorBlueLight;
+            padding: 52px 45px 80px 37px;
+            margin-bottom: 20px;
+            border-radius: 0 0 0 40px;
+        }
+        &-post--wrap-topRadius {
+            border-radius: 40px 0 0 0;
+        }
+        
+        &-post {
+            font-family: $fontOutfit;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0.4px;
+            color: #D7D7D7;
+        } 
+        &-client--wrap {
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+    }
+    &__icons--quotes {
+        margin-bottom: 33px;
+    }
+    
+    &__client { 
+        &-photo {}
+        &-img {}
+        &-name--wrap {}
+        &-name {
+            font-family: $fontCormorant;
+            font-weight: 400;
+            font-size: 30px;
+            letter-spacing: 0.4px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            }
+            &-position {
+            font-family: $fontOutfit;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.4px;
+            color: #D7D7D7;
+            }
+
+}
+
+}
+
+
+
+    
+
+
