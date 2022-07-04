@@ -1,0 +1,74 @@
+.answers-questions {
+    background: $colorWtite;
+    .container {
+        padding: 124px 0 131px;
+    }
+    &__title--wrap {
+       
+    }
+    &__title {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 45px;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #161D27;
+        text-align: center;
+        margin: 0 374px 0 374px;
+        }
+
+    &__block-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    &__items {
+        // border: 1px dashed red;
+        &-civilAttorney {
+            grid-row-start: 1;
+            grid-column: 1;
+        }
+        &-associateAttorney {
+            grid-row-start: 1;
+            grid-column: 2;
+        }
+        &-titularAttorney {
+            grid-row-start: 1;
+            grid-column: 3;
+        }         
+        
+        &-attorney--wrap {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+    }
+   
+
+
+}
+    
+.answers-questions__attorney { 
+    &-photo {}
+    &-img {}
+    &-name--wrap {}
+    &-name {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.4px;
+        color: $colorBlack;
+        margin-bottom: 10px;
+
+        }
+        &-position {
+        font-family: $fontOutfit;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.4px;
+        color: $colorOlive ;
+        }
+
+}

@@ -86,7 +86,7 @@ a {
   display: block;
 }
 .frame--in-center {
-  margin: 11px auto 40px auto;
+  margin: 11px auto 60px auto;
 }
 .frame-center {
   width: 95px;
@@ -765,4 +765,70 @@ a {
   font-size: 20px;
   letter-spacing: 0.4px;
   color: #D7D7D7;
+}
+
+.answers-questions {
+  background: white;
+}
+.answers-questions .container {
+  padding: 124px 0 131px;
+}
+.answers-questions__title {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: #161D27;
+  text-align: center;
+  margin: 0 374px 0 374px;
+}
+.answers-questions__block-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+.answers-questions__items-civilAttorney {
+  grid-row-start: 1;
+  grid-column: 1;
+}
+.answers-questions__items-associateAttorney {
+  grid-row-start: 1;
+  grid-column: 2;
+}
+.answers-questions__items-titularAttorney {
+  grid-row-start: 1;
+  grid-column: 3;
+}
+.answers-questions__items-attorney--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.answers-questions__attorney-name {
+  font-family: "Cormorant", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+  color: black;
+  margin-bottom: 10px;
+}
+.answers-questions__attorney-position {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #D1B06B;
 }/*# sourceMappingURL=main.css.map */
