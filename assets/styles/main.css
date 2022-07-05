@@ -79,6 +79,12 @@ a {
   background: #D1B06B;
   color: #1F2732;
 }
+.button--center {
+  background: white;
+  width: 305px;
+  color: #3B434E;
+  margin: 25px auto 25px auto;
+}
 
 .frame {
   width: 95px;
@@ -989,4 +995,92 @@ a {
   line-height: 42px;
   letter-spacing: 0.4px;
   color: #1F2732;
+}
+
+.get-in-appointment {
+  background: url(../images/welcome_photo/welcome_top_photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.get-in-appointment .container {
+  padding: 140px 25px;
+}
+.get-in-appointment__form-control {
+  background: #1F2732;
+  padding: 89px 100px 105px 100px;
+}
+.get-in-appointment__form {
+  width: 100%;
+}
+.get-in-appointment__form--wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.form__left-part {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__right-part {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__item {
+  width: 50%;
+  padding: 27px 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #3B434E;
+  background: #1F2732;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+.form__message-area {
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+}
+
+:-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+}
+
+:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.4px;
 }/*# sourceMappingURL=main.css.map */
