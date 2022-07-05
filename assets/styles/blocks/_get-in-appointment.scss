@@ -26,14 +26,16 @@
    
 } 
 .form {  
-    &__left-part {
+    &__top-part {
         width: 100%;
         display: flex;
+        gap: 20px;
     }
 
-    &__right-part {
+    &__bottom-part {
         width: 100%;
         display: flex;
+        gap: 20px;
     }
     &__item {
         width: 50%;
