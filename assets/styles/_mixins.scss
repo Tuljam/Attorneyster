@@ -3,6 +3,13 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 @mixin color ($color) {
     color: $color;
 }

@@ -1,0 +1,101 @@
+.contact-us {
+    background-color: $colorBlueDark;
+
+    .container {
+        padding: 150px 25px;
+    }
+
+    &__offer--wrap {
+        width: 100%;
+        display: flex;
+    }
+    &__offer--left-part {
+        width: 50%;
+    }
+    &__offer--right-part {
+        width: 50%;
+    }
+    &__title {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 58px;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+    &__descr {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.4px;
+        color: #D7D7D7;
+        margin-bottom: 37px;
+    }
+    &__offer--right-part {
+        background-color:$colorWtite;
+        width: 50%;
+    }
+    &__offer--wrap-greyBorderBlock {
+        border: 15px solid #D7D7D7;;
+        width: 550px;
+        height: 410px;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        padding: 70px 37px 78px 27px;
+    }
+    &__title-secondary {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: 42px;
+        letter-spacing: 0.4px;
+        color: #1F2732;
+        margin-bottom: 12px;
+    }
+    &__descr--right-part {
+        color: #909090;
+        margin-bottom: 37px;
+    }
+    &__phon-group--wrap {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+ 
+    }
+
+    &__phon-icon--wrap {
+        background-color: $colorOlive;
+        width: 70px;
+        height: 70px;
+        padding: 22px;
+
+    }
+    &__phon-img {
+        width: 27px;
+        height: 27px;
+    }
+    &__phon-descr {
+        @include flexColumn;
+        gap: 10px;
+    }
+    &__phon-text {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;        
+        letter-spacing: 0.4px;
+        color: #1F2732;
+        }
+
+    &__phon-number {
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0.4px;
+        color: #1F2732;
+    }
+}
