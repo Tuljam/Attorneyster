@@ -1,37 +1,38 @@
-.header-banner--wrapper {
-    // height: 100vh;
-    background-image:linear-gradient(rgba(56, 53, 71, 0.5), rgba(53, 53, 71, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+.wrapper { 
+    background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
     background-position: center;
-    background-size: cover;
-    position: relative;
-}
+    background-size: cover; 
+    width: 100%;}
 
 .header-attornest {
-       
+    // height: 295px;
+    // position: absolute;
+   
+    left: 0;
+    right: 0;
+         
     .container {
-        border: none
-
-
+    border: none
     }
     &__logo-block {
-        padding: 41px 0;
         border-bottom: 1px solid #4E555F;
         display: flex;
         justify-content:space-between;
-
-
+        align-items:center;
     }
     &__logo {
 
-        &__logo-img {
-            padding: 10px;
+        &-img {
+            padding: 36px 20px;
         }
     }
     
     &__main-block {
         display: flex;
+        justify-content: space-between;
+        align-items:center;
         width: 100%;
-        padding: 45px 0;
+        // padding: 45px 0;
         border-bottom: 1px solid #4E555F;
 
     }
@@ -47,8 +48,8 @@
         }
         
         &-item {
-            padding: 15px;
-            margin-right: 46px;
+            padding: 35px 20px;
+            margin-right: 10px;
         }
         &-item:last-child {
             margin-right: 0;

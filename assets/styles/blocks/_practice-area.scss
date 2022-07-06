@@ -1,25 +1,29 @@
 .practice-area {
     background-color: #161D27;
 
-    .container {}
+    .container {
+        padding: 130px 30px;
+    }
 
     &__block-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
-        padding: 70px 35px;
-        gap: 20px 35px;
+        // padding: 70px 35px;
+        gap: 20px 17px;
     }
     &__items {
         // border: 1px dashed red;
         background: #1F2732;
-        padding: 55px 50px 70px 50px ;
+        padding: 50px ;
     }
-    &__item-title--wrap {
+    &__item-title--wrap { 
         background-color: #161D27;
+   
         grid-row-start: 1;
         grid-column-start: 1;
-        padding: 125px 0 10px 0 ;
+        padding: 35px 0;
+    
 
     }
 .practice-area__title  {
@@ -29,7 +33,7 @@
     letter-spacing: 0.4px;
     text-transform: capitalize;
     @include color(white);
-    margin-bottom: 19px;
+    margin: 19px 0;
 
 }
 
@@ -37,7 +41,7 @@
     background-color: #161D27;
     grid-row-start: 1;
     grid-column: 2/4;
-    padding: 160px 0 10px 200px;
+    padding: 95px 0 10px 200px;
 }
 .practice-area__info {
     font-family: $fontOutfit;
@@ -49,6 +53,31 @@
 
 }
 .practice-area__item-list--wrap {
+    &-first {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    &-second {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    &-third {
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+    &-fourth {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    &-fifth {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    &-sixth {
+        grid-row-start: 3;
+        grid-column-start: 3;
+    }
+    
    
     
 }

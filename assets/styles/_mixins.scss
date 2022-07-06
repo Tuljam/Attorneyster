@@ -14,11 +14,33 @@
     color: $color;
 }
 
-// @mixin fontH4Cormorant ($fontSize)   {
-//     font-family: $fontCormorant;
-//     font-size: $fontSize;
-//     font-weight: 400;
-//     letter-spacing: 0.4px;
-//     text-transform: capitalize;
-//     color: $colorWtite;
-// }
+
+@mixin fontOutfit-oliv ($fontSize, $lineHeight:0)   {
+font-family: $fontOutfit;
+font-weight: 400;
+font-size: $fontSize;
+line-height: $lineHeight;
+letter-spacing: 0.4px;
+color: $colorOlive;
+}
+@mixin fontOutfit-white ($fontSize, $lineHeight:0 )   {
+    font-family: $fontOutfit;
+    font-weight: 400;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: 0.4px;
+    color: $colorWtite;
+    }
+@mixin fontCormorant-title ($fontSize)   {
+    font-family: $fontCormorant;
+    font-weight: 400;
+    font-size: $fontSize;
+    letter-spacing: 0.4px;
+    }
+    @mixin fontCormorant-text ($fontSize)   {
+        font-family: $fontCormorant;
+        font-weight: 400;
+        font-size: $fontSize;
+        letter-spacing: 0.4px;
+    
+    }

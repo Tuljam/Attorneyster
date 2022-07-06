@@ -1,8 +1,12 @@
+
 .banner {
         // height: 100vh;
-        // background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
-        // background-position: center;
-        // background-size: cover;
+       
+        // display: flex;
+        // align-items: center;
+        // padding: 250px 0;
+        
+
     .container {
 
     }
@@ -10,7 +14,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        padding: 25px 0 25px 0;
+        // padding: 25px 0 25px 0;
     }
     &-item {
 
@@ -23,6 +27,8 @@
         grid-column-start: 2;
         grid-row-start: 1;
         background: transparent;
+        width: 672px;
+        height: 708px;
     }
         &__img {
         max-width: 100%;

@@ -68,6 +68,10 @@
     width: 320px;
     height: 1px;
     border: 1px solid #4E555F;
-    margin: 28.3px 0 56.7px 0; 
-
+    margin: 28px 0 57px 0; 
+    
+    &--blogs {
+        width: 100%;
+        margin: 26px 0 0 0; 
+    }
 }
