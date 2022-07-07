@@ -307,7 +307,7 @@ a {
   grid-column-start: 2;
 }
 .welcome .welcome__items-title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 58px;
@@ -357,7 +357,7 @@ a {
 }
 
 .represent__name-mainAttorney {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 40px;
   letter-spacing: 0.4px;
@@ -445,7 +445,7 @@ a {
   padding: 35px 0;
 }
 .practice-area .practice-area__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   letter-spacing: 0.4px;
@@ -492,7 +492,7 @@ a {
   grid-column-start: 3;
 }
 .list-law__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 35px;
   letter-spacing: 0.4px;
@@ -522,7 +522,7 @@ a {
   padding: 124px 25px 82px 25px;
 }
 .results__description-title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   text-align: center;
@@ -599,7 +599,7 @@ a {
 }
 
 .list-client__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.4px;
@@ -637,7 +637,7 @@ a {
   margin: 0 40px;
 }
 .partners__title-text {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 50px;
   letter-spacing: 0.4px;
@@ -681,9 +681,16 @@ a {
 .history-block {
   padding: 50px 60px 102px 60px;
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .history-block_title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 59px;
@@ -724,7 +731,7 @@ a {
           flex-direction: column;
 }
 .specialised-block__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 58px;
@@ -756,7 +763,9 @@ a {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 5px solid #D1B06B;
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient to bottom, #D1B06B, rgba(247, 243, 243, 0.966) 1 100%;
+     border-image: linear-gradient to bottom, #D1B06B, rgba(247, 243, 243, 0.966) 1 100%;
   margin-bottom: 40px;
   background: rgba(31, 39, 50, 0.15);
 }
@@ -768,7 +777,7 @@ a {
   padding: 120px 35px 212px 35px;
 }
 .revies__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 54px;
@@ -830,7 +839,7 @@ a {
   margin-bottom: 33px;
 }
 .revies__client-name {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.4px;
@@ -852,7 +861,7 @@ a {
   padding: 124px 0 131px;
 }
 .answers-questions__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   letter-spacing: 0.4px;
@@ -895,7 +904,7 @@ a {
           justify-content: space-evenly;
 }
 .answers-questions__attorney-name {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.4px;
@@ -949,7 +958,7 @@ a {
   width: 50%;
 }
 .contact-us__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 58px;
@@ -977,11 +986,11 @@ a {
   height: 410px;
   margin: 0 auto;
   position: relative;
-  top: 40px;
+  top: 17px;
   padding: 70px 37px 78px 27px;
 }
 .contact-us__title-secondary {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 42px;
   letter-spacing: 0.4px;
@@ -1135,7 +1144,7 @@ a {
   padding: 140px 25px 140px 25px;
 }
 .blogs__title-main {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   text-align: center;
@@ -1171,7 +1180,7 @@ a {
   padding: 10px 50px 10px 10px;
 }
 .info-block__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 45px;
   letter-spacing: 0.4px;
@@ -1208,7 +1217,6 @@ a {
   padding: 100px 0 140px 0;
 }
 .blogs-post__item {
-  border: 1px solid red;
   padding: 5px;
 }
 .blogs-post__item-picture--narrow {
@@ -1228,7 +1236,7 @@ a {
   margin: 10px 0;
 }
 .blogs-post__title {
-  font-family: "Cormorant", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.4px;
@@ -1256,4 +1264,162 @@ a {
 }
 .blogs-post__link-secondary:hover, .blogs-post__link-secondary:active {
   color: wheat;
+}
+
+.block-photo {
+  background: url(../images/footer/footer_photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.block-photo .container {
+  width: 100%;
+  height: 248px;
+}
+
+.footer {
+  background: #1F2732;
+}
+.footer .container {
+  padding: 130px 25px 100px 25px;
+}
+.footer__logo-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__item {
+  width: 33.3333333333%;
+}
+.footer__frame-left {
+  margin: auto;
+  width: 100%;
+}
+.footer__frame-right {
+  margin: auto;
+  width: 100%;
+}
+.footer-navigation--wrap {
+  padding: 93px 0 84px 0;
+}
+.footer-navigation__grid-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px 35px;
+  width: 100%;
+}
+.footer-navigation__main-item {
+  width: 25%;
+  border-bottom: 1px solid #3B434E;
+  border-top: 1px solid #3B434E;
+  padding: 15px;
+}
+.footer-navigation__link {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+  color: white;
+}
+.footer-navigation__chapters--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+.footer-navigation__chapter-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 25%;
+}
+.footer-navigation__chapter-list {
+  padding: 20px;
+}
+.footer-navigation__chapter-list:first-child {
+  padding: 40px 20px 20px 20px;
+}
+.footer-navigation__chapter-list:last-child {
+  padding: 20px 20px 85px 20px;
+}
+.footer-navigation__chapter-link {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0;
+  letter-spacing: 0.4px;
+  color: white;
+}
+.footer .footer__finished-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #3B434E;
+  border-bottom: 1px solid #3B434E;
+}
+.footer .footer-coppiraght__text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0;
+  letter-spacing: 0.4px;
+  color: white;
+}
+.footer .footer__word-oliv {
+  color: #D1B06B;
+}
+.footer .footer-media--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-media__descr {
+  padding: 25px;
+}
+.footer .footer-media__text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0;
+  letter-spacing: 0.4px;
+  color: #D1B06B;
+}
+.footer .footer-media__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.footer .footer-media__list-items {
+  padding: 25px 10px;
 }/*# sourceMappingURL=main.css.map */
