@@ -112,16 +112,10 @@ a {
   margin: 26px 0 0 0;
 }
 
-.wrapper {
-  background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-
 .header-attornest {
-  left: 0;
-  right: 0;
+  height: 295px;
+  width: 100%;
+  position: absolute;
 }
 .header-attornest .container {
   border: none;
@@ -243,19 +237,23 @@ a {
   color: #D1B06B;
 }
 
+.banner {
+  height: 100vh;
+  background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.banner .container {
+  padding: 260px 25px 100px 25px;
+}
 .banner__block-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-}
-.banner-item__info {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  padding-top: 130px;
+  padding: 100px 0 0 0;
 }
 .banner-item__photo {
-  grid-column-start: 2;
-  grid-row-start: 1;
   background: transparent;
   width: 672px;
   height: 708px;
@@ -763,9 +761,9 @@ a {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 5px solid;
-  -o-border-image: linear-gradient to bottom, #D1B06B, rgba(247, 243, 243, 0.966) 1 100%;
-     border-image: linear-gradient to bottom, #D1B06B, rgba(247, 243, 243, 0.966) 1 100%;
+  border-bottom: 5px solid #D1B06B;
+  -o-border-image: linear-gradient to right, #D1B06B 20%, rgba(247, 243, 243, 0.966) 70%;
+     border-image: linear-gradient to right, #D1B06B 20%, rgba(247, 243, 243, 0.966) 70%;
   margin-bottom: 40px;
   background: rgba(31, 39, 50, 0.15);
 }

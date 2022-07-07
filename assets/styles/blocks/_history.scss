@@ -92,12 +92,11 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: 5px solid ;
+        border-bottom: 5px solid #D1B06B;
         border-image: 
          linear-gradient (
-         to bottom, 
-         #D1B06B, 
-         rgba(247, 243, 243, 0.966)) 1 100%;
+         to right, 
+         #D1B06B 20%,rgba(247, 243, 243, 0.966) 70%);
 
         margin-bottom: 40px;
         background:rgba(31, 39, 50, 0.15);
