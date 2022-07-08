@@ -94,9 +94,8 @@
         border-right: none;
         border-bottom: 5px solid #D1B06B;
         border-image: 
-         linear-gradient (
-         to right, 
-         #D1B06B 20%,rgba(247, 243, 243, 0.966) 70%);
+        linear-gradient(to right, rgb(236, 176, 46) 280px, rgb(247, 239, 239)20px);
+        border-image-slice: 1;
 
         margin-bottom: 40px;
         background:rgba(31, 39, 50, 0.15);

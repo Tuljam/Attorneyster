@@ -1,7 +1,7 @@
 
 .banner {
         height: 100vh;
-        background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+        background-image: linear-gradient( to right, rgba(66, 55, 55, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
         background-position: center;
         background-size: cover; 
         width: 100%;

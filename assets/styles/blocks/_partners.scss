@@ -39,9 +39,16 @@
     }
     &__item {
         padding: 45px;
+        transition: path 0.7s easy-in-out;
 
     }
-    &__icon {
-
-    }
+   
+   
 }
+.partners__item:active {
+    .partners__icon {path {fill:rgb(150, 62, 62);} }
+    } 
+
+.partners__icon {
+        path {fill:#B1B1B1;}
+    }

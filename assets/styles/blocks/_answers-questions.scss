@@ -1,7 +1,7 @@
 .answers-questions {
     background: $colorWtite;
     .container {
-        padding: 124px 0 131px;
+        padding: 124px 20px 131px 20px;
     }
     &__title--wrap {}
     
@@ -21,21 +21,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 30px;
+        flex-wrap: wrap;
     }
     &__items {
+        width: 100%;
         // border: 1px dashed red;
-        &-civilAttorney {
-            grid-row-start: 1;
-            grid-column: 1;
-        }
-        &-associateAttorney {
-            grid-row-start: 1;
-            grid-column: 2;
-        }
-        &-titularAttorney {
-            grid-row-start: 1;
-            grid-column: 3;
-        }         
         
         &-attorney--wrap {
             display: flex;
@@ -46,8 +36,11 @@
     }
         &__attorney { 
         &-photo {
+            width: 100%;
             }
-        &-img {}
+        &-img {
+            width: 100%;
+        }
         &-name--wrap {
         }
 
@@ -72,29 +65,37 @@
         width: 217px;
         height: 66px;
         background: $colorWtite;
-        border: 1px solid aqua;
         position: relative;
         bottom: 136px;
-        left: 120px;
-        
-        
-    
+        left: 104px;
+        background-color: $colorWtite;
+        transition: background-color 0.4s easy-in-out;
     }
-    
-    .answers-questions__media-list {
+   
+    &__media-list {
         display: flex;
         align-items:center;
         justify-content: space-evenly;
         padding: 20px;
+        border: 3px solid $colorOlive;
+        background-color: $colorWtite;
+        transition: background-color 0.4s easy-in-out;
     }
-    &__media-items {
-
+    &__media-list:hover {
+        background-color: $colorOlive ;
     }
-    &__media-link {
-        
+    &__media-link:hover {
+        .answers-questions__media-icon {path { fill: #1b6bdb;}}    
     }
-    &__media-icon {}
+    &__media-icon {
+        path { fill: #1F2732;}
+    }
 }
+    .answers-questions__media-items:active {
+}
+   
+   
+
 
 
     

@@ -56,34 +56,59 @@ a {
   letter-spacing: 0.4px;
   text-align: center;
   color: #FFFFFF;
+  -webkit-transition: background-color, color 0.4s ease-in-out;
+  transition: background-color, color 0.4s ease-in-out;
 }
 .button--grey {
-  background: rgba(155, 139, 139, 0.575);
+  background-color: rgba(155, 139, 139, 0.575);
+}
+.button--grey:hover, .button--grey:focus, .button--oliv:hover, .button--oliv:focus {
+  background-color: #5e543f;
 }
 .button--oliv {
   width: 269px;
-  background: #D1B06B;
+  background-color: #D1B06B;
 }
 .button--history {
   width: 302px;
-  background: #D1B06B;
+  background-color: #D1B06B;
   color: #1F2732;
+}
+.button--history:hover, .button--history:focus {
+  background-color: #7e7052;
+  color: #FFFFFF;
 }
 .button__list-view {
   width: 187px;
   height: 58px;
   background: #161D27;
 }
+.button__list-view:hover, .button__list-view:focus {
+  background-color: #7e7052;
+  color: #161D27;
+}
 .button--contact-us {
   width: 257px;
   background: #D1B06B;
   color: #1F2732;
 }
-.button--center {
-  background: white;
+.button--contact-us:hover, .button--contact-us:focus {
+  background-color: #7e7052;
+  color: white;
+}
+.button--get-in-center {
+  background-color: white;
   width: 305px;
   color: #3B434E;
   margin: 25px auto 25px auto;
+}
+.button--get-in-center:hover {
+  background-color: #7e7052;
+  color: white;
+}
+
+.button:active, .button:hover {
+  cursor: pointer;
 }
 
 .frame {
@@ -135,7 +160,7 @@ a {
 .header-attornest__logo-img {
   padding: 36px 20px;
 }
-.header-attornest__main-block {
+.header-attornest__menu-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +197,11 @@ a {
   font-size: 22px;
   letter-spacing: 0.4px;
   color: #FFFFFF;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.header-attornest__nav-link:hover {
+  color: #D1B06B;
 }
 
 .header-attornest__info-block {
@@ -197,6 +227,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-info__block-circle {
   width: 62px;
@@ -204,16 +237,32 @@ a {
   position: relative;
   border: 2px solid #D1B06B;
   border-radius: 100px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 .header-info__icon {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100% px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 18px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.header-info__icon path {
+  fill: white;
+}
+.header-info__icon:hover {
+  cursor: pointer;
+}
+.header-info__block-circle:hover {
+  border-color: blue;
+}
+.header-info__block-circle:hover .header-info__icon path {
+  fill: #D1B06B;
 }
 .header-info__descr--wrap {
   padding: 10px;
@@ -224,6 +273,7 @@ a {
   font-size: 18px;
   letter-spacing: 0.4px;
   color: #D1B06B;
+  margin-bottom: 5px;
 }
 .header-info__phone-number, .header-info__email {
   font-family: "Outfit";
@@ -239,7 +289,8 @@ a {
 
 .banner {
   height: 100vh;
-  background-image: url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(66, 55, 55, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
+  background-image: linear-gradient(to right, rgba(66, 55, 55, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -429,7 +480,7 @@ a {
 .practice-area__block-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   gap: 20px 17px;
 }
 .practice-area__items {
@@ -440,7 +491,7 @@ a {
   background-color: #161D27;
   grid-row-start: 1;
   grid-column-start: 1;
-  padding: 35px 0;
+  padding: 15px 0;
 }
 .practice-area .practice-area__title {
   font-family: "Cormorant Garamond", sans-serif;
@@ -464,30 +515,6 @@ a {
   line-height: 32px;
   letter-spacing: 0.4px;
   color: #D7D7D7;
-}
-.practice-area .practice-area__item-list--wrap-first {
-  grid-row-start: 2;
-  grid-column-start: 1;
-}
-.practice-area .practice-area__item-list--wrap-second {
-  grid-row-start: 2;
-  grid-column-start: 2;
-}
-.practice-area .practice-area__item-list--wrap-third {
-  grid-row-start: 2;
-  grid-column-start: 3;
-}
-.practice-area .practice-area__item-list--wrap-fourth {
-  grid-row-start: 3;
-  grid-column-start: 1;
-}
-.practice-area .practice-area__item-list--wrap-fifth {
-  grid-row-start: 3;
-  grid-column-start: 2;
-}
-.practice-area .practice-area__item-list--wrap-sixth {
-  grid-row-start: 3;
-  grid-column-start: 3;
 }
 .list-law__title {
   font-family: "Cormorant Garamond", sans-serif;
@@ -576,7 +603,10 @@ a {
 .results__list-icon {
   width: 22px;
   height: 20px;
-  color: #D1B06B;
+  text-shadow: blue 5px 5px;
+}
+.results__list-icon path {
+  fill: #D1B06B;
 }
 .results__list-icon--star {
   width: 25px;
@@ -620,6 +650,10 @@ a {
   color: #FFFFFF;
 }
 
+.results__list-picture--wrap:hover .results__list-icon path {
+  fill: rgb(150, 62, 62);
+}
+
 .partners .container {
   padding: 80px 110px 70px 100px;
 }
@@ -654,7 +688,18 @@ a {
 }
 .partners__item {
   padding: 45px;
+  -webkit-transition: path 0.7s easy-in-out;
+  transition: path 0.7s easy-in-out;
 }
+
+.partners__item:active .partners__icon path {
+  fill: rgb(150, 62, 62);
+}
+
+.partners__icon path {
+  fill: #B1B1B1;
+}
+
 .history-specialised {
   background: url(../images/background_history.jpg);
   background-size: cover;
@@ -762,8 +807,9 @@ a {
   border-left: none;
   border-right: none;
   border-bottom: 5px solid #D1B06B;
-  -o-border-image: linear-gradient to right, #D1B06B 20%, rgba(247, 243, 243, 0.966) 70%;
-     border-image: linear-gradient to right, #D1B06B 20%, rgba(247, 243, 243, 0.966) 70%;
+  -o-border-image: linear-gradient(to right, rgb(236, 176, 46) 280px, rgb(247, 239, 239) 20px);
+     border-image: linear-gradient(to right, rgb(236, 176, 46) 280px, rgb(247, 239, 239) 20px);
+  border-image-slice: 1;
   margin-bottom: 40px;
   background: rgba(31, 39, 50, 0.15);
 }
@@ -856,7 +902,7 @@ a {
   background: white;
 }
 .answers-questions .container {
-  padding: 124px 0 131px;
+  padding: 124px 20px 131px 20px;
 }
 .answers-questions__title {
   font-family: "Cormorant Garamond", sans-serif;
@@ -873,18 +919,11 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.answers-questions__items-civilAttorney {
-  grid-row-start: 1;
-  grid-column: 1;
-}
-.answers-questions__items-associateAttorney {
-  grid-row-start: 1;
-  grid-column: 2;
-}
-.answers-questions__items-titularAttorney {
-  grid-row-start: 1;
-  grid-column: 3;
+.answers-questions__items {
+  width: 100%;
 }
 .answers-questions__items-attorney--wrap {
   display: -webkit-box;
@@ -900,6 +939,12 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+.answers-questions__attorney-photo {
+  width: 100%;
+}
+.answers-questions__attorney-img {
+  width: 100%;
 }
 .answers-questions__attorney-name {
   font-family: "Cormorant Garamond", sans-serif;
@@ -920,12 +965,14 @@ a {
   width: 217px;
   height: 66px;
   background: white;
-  border: 1px solid aqua;
   position: relative;
   bottom: 136px;
-  left: 120px;
+  left: 104px;
+  background-color: white;
+  -webkit-transition: background-color 0.4s easy-in-out;
+  transition: background-color 0.4s easy-in-out;
 }
-.answers-questions .answers-questions__media-list {
+.answers-questions__media-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +983,21 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 20px;
+  border: 3px solid #D1B06B;
+  background-color: white;
+  -webkit-transition: background-color 0.4s easy-in-out;
+  transition: background-color 0.4s easy-in-out;
 }
+.answers-questions__media-list:hover {
+  background-color: #D1B06B;
+}
+.answers-questions__media-link:hover .answers-questions__media-icon path {
+  fill: #1b6bdb;
+}
+.answers-questions__media-icon path {
+  fill: #1F2732;
+}
+
 .contact-us {
   background-color: #161D27;
 }
@@ -1420,4 +1481,14 @@ a {
 }
 .footer .footer-media__list-items {
   padding: 25px 10px;
+}
+.footer .footer-media__list-link:hover .footer-media__list-icon path {
+  fill: rgb(204, 76, 53);
+}
+.footer .footer-media__list-icon path {
+  fill: #FFFFFF;
+}
+
+.footer-media__list-icon path {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

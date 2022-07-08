@@ -8,9 +8,8 @@
     &__block-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        // padding: 70px 35px;
-        gap: 20px 17px;
+        grid-template-rows: 0.3fr 1fr 1fr;
+         gap: 20px 17px;
     }
     &__items {
         // border: 1px dashed red;
@@ -22,7 +21,7 @@
    
         grid-row-start: 1;
         grid-column-start: 1;
-        padding: 35px 0;
+        padding: 15px 0;
     
 
     }
@@ -54,32 +53,8 @@
 }
 .practice-area__item-list--wrap {
     &-first {
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
-    &-second {
-        grid-row-start: 2;
-        grid-column-start: 2;
-    }
-    &-third {
-        grid-row-start: 2;
-        grid-column-start: 3;
-    }
-    &-fourth {
-        grid-row-start: 3;
-        grid-column-start: 1;
-    }
-    &-fifth {
-        grid-row-start: 3;
-        grid-column-start: 2;
-    }
-    &-sixth {
-        grid-row-start: 3;
-        grid-column-start: 3;
-    }
     
-   
-    
+    }
 }
 .practice-area__list-law {}
 

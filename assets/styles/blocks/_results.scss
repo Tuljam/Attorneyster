@@ -37,7 +37,7 @@
         background: #FBFBFB;
         display: flex;
         justify-content: space-around;
-        align-items:center
+        align-items:center;
 
     }  
 
@@ -54,16 +54,20 @@
         padding-top: 35px;
         text-align: center;
         }
+    
     &__list-icon {
         width: 22px;
         height: 20px;
-        color:  #D1B06B;
-        
+        path {
+            fill: #D1B06B ;
+        }
+        text-shadow: blue 5px 5px ;   
     }
     &__list-icon--star {
     width: 25px;
     height: 24px;
     }
+   
 
     &__list-quantity {
         font-family: $fontOutfit;
@@ -108,4 +112,9 @@
     }
 }
     
-
+.results__list-picture--wrap:hover {
+    .results__list-icon {
+        path {
+        fill: rgb(150, 62, 62) ;
+    } }
+}

@@ -9,41 +9,65 @@
     letter-spacing: 0.4px;
     text-align: center;
     color: #FFFFFF;
-
+    transition: background-color, color 0.4s ease-in-out ;
+    
+    
     &--grey {
-        background:rgba(155, 139, 139, 0.575);
+        background-color:rgba(155, 139, 139, 0.575);
+    }
+    &--grey:hover, &--grey:focus, &--oliv:hover, &--oliv:focus {
+        background-color: #5e543f;
     }
     &--oliv {
     width: 269px;
-    background: #D1B06B;
-  
+    background-color: #D1B06B;
     }
+    // &--oliv:hover, &--oliv:focus {
+    // background-color: #7e7052;
+    // }
     &--history {
     width: 302px;
-    background: #D1B06B;
+    background-color: #D1B06B;
     color: #1F2732;
      }
+     &--history:hover, &--history:focus {
+        background-color: #7e7052;
+        color:#FFFFFF;
+    }
 
     &__list-view {
         width: 187px;
         height: 58px;
         background: #161D27;
+
     }
+    &__list-view:hover, &__list-view:focus {
+        background-color: #7e7052;
+        color:#161D27;
+    }
+
     &--contact-us {
         width: 257px;
         background: #D1B06B;
         color: #1F2732;
-
     }
-    &--center {
-        background: white;
+    &--contact-us:hover, &--contact-us:focus {
+        background-color: #7e7052;
+        color: white;
+    }
+    &--get-in-center {
+        background-color: white;
         width: 305px;
         color: #3B434E;
         margin: 25px auto 25px auto;
-
     }
-
-
+    &--get-in-center:hover {
+        background-color: #7e7052;
+        color: white;
+    } 
+}
+.button:active, .button:hover {
+    cursor: pointer;
 }
 .frame {
     width: 95px;
@@ -64,6 +88,7 @@
     }
 
 }
+
 .separator {
     width: 320px;
     height: 1px;
@@ -75,3 +100,4 @@
         margin: 26px 0 0 0; 
     }
 }
+
