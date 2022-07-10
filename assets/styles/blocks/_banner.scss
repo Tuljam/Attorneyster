@@ -1,24 +1,27 @@
 
 .banner {
-        height: 100vh;
+        //  
         background-image: linear-gradient( to right, rgba(66, 55, 55, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
         background-position: center;
         background-size: cover; 
         width: 100%;
     .container {
-        padding: 343px 40px 0 40px;
-
-
+        padding: 320px 5px 0 40px;
+    }
+    &__frame {
+        margin: 90px 0 15px 0 ;
     }
     &__block-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
-        padding: 100px 10px 0 10px;
+        // padding: 100px 10px 0 10px;
+   
     }
     &-item {
 
         &__info{
+
     }
         &__photo {
         background: transparent;

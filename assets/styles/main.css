@@ -291,7 +291,6 @@ a {
 }
 
 .banner {
-  height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(66, 55, 55, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
   background-image: linear-gradient(to right, rgba(66, 55, 55, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-fon.jpg), url(../images/background-fon-buttom.jpg);
   background-position: center;
@@ -299,13 +298,15 @@ a {
   width: 100%;
 }
 .banner .container {
-  padding: 343px 40px 0 40px;
+  padding: 320px 5px 0 40px;
+}
+.banner__frame {
+  margin: 90px 0 15px 0;
 }
 .banner__block-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 1fr;
-  padding: 100px 10px 0 10px;
 }
 .banner-item__photo {
   background: transparent;
@@ -1267,6 +1268,7 @@ a {
   line-height: 0;
   letter-spacing: 0.4px;
   color: #D1B06B;
+  line-height: 17px;
   text-transform: capitalize;
   text-decoration: underline;
 }
