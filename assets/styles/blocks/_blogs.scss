@@ -1,15 +1,12 @@
 .blogs {
     background: #1F2732;
     .container {
-        padding: 140px 25px 140px 25px;
+        padding: 140px 40px 25px 40px;
     }
     &__title-main {
-    font-family: $fontCormorant;
-    font-weight: 400;
-    font-size: 45px;
-    text-align: center;
-    letter-spacing: 0.4px;
-    color: #FFFFFF;
+        @include fontCormorant-title (45px);
+        color: $colorWtite;
+        text-align: center;
     }
     &__description--wrap {
         display: flex;
@@ -27,7 +24,7 @@
     }
     &__info-block{
         &--wrap {
-            width: 50%;
+        width: 50%;
         padding: 70px 35px 192px 50px;
         }
     }
@@ -40,11 +37,8 @@
 }
 
     &__title {
-        font-family: $fontCormorant;
-        font-weight: 400;
-        font-size: 45px;
-        letter-spacing: 0.4px;  
         color: #FFFFFF;
+        @include fontCormorant-title (45px);
         margin: 25px 0 21px 0;
     }
     &__text {
@@ -52,18 +46,13 @@
         margin-bottom: 17px;
     }
     &__link {
-        font-family:$fontOutfit;
-        font-weight: 400;
-        font-size: 22px;
-        letter-spacing: 0.4px;
+        @include fontOutfit-oliv (22px);
         text-transform: capitalize;
-        color: #D1B06B;
         text-decoration: underline;
     }
 &__link:hover, &__link:active  {
     color:wheat;
-
-}
+    }
 }
 
 
@@ -79,7 +68,7 @@
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 0.8fr 1fr 0.8fr;
     gap: 20px 20px;
-    padding: 100px 0 140px 0;
+    padding: 100px 0 0 0;
     }
     &__item {
     // border: 1px solid red;

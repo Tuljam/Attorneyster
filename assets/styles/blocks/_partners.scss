@@ -5,32 +5,24 @@
     &__title--wrap {
     display: flex;
     justify-content: center;
-    // align-items:center;
-  
-   
+        // align-items:center;
     }
     &__title-img {
-
+        // padding: 25px 15px;
     }
 
     &__title {
+        // padding: 25px 15px;
     margin: 0 40px;
 
     }
     &__title-text {
-    font-family: $fontCormorant;
-    font-weight: 400;
-    font-size: 50px;
-    letter-spacing: 0.4px;
+    @include fontCormorant-title (50px);
     text-transform: capitalize;
-
-
     }
     
     &__group--wrap {
-
     }
- 
 
     &__list {
     display: flex;
@@ -38,12 +30,10 @@
     align-items: center;
     }
     &__item {
-        padding: 45px;
-        transition: path 0.7s easy-in-out;
-
+    padding: 45px;
+    transition: path 0.7s easy-in-out;
     }
-   
-   
+
 }
 .partners__item:active {
     .partners__icon {path {fill:rgb(150, 62, 62);} }

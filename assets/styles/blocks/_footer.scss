@@ -2,7 +2,7 @@
     background:url(../images/footer/footer_photo.png);
     background-size:cover;
     background-repeat: no-repeat;
-   
+
     .container {
         width: 100%;
         height: 248px;
@@ -15,8 +15,7 @@
     background: #1F2732;
     
     .container {
-        padding: 130px 25px 100px 25px;
-
+        padding: 130px 40px 100px 40px;
     }
     &__logo-block {
         width: 100%; 
@@ -48,13 +47,10 @@
         &--wrap {
             padding: 93px 0 84px 0;
         }
-        &__grid-block {
+        &__block {
             display: flex;
-            // grid-template-columns: 1.2fr 0.75fr 0.75fr 1.2fr;
             gap: 30px 35px;
             width: 100%; 
-            
-            
         }
         &__main-item {
             width: calc(100%/4);
@@ -108,21 +104,20 @@
         border-bottom: 1px solid #3B434E;
         } 
         &-coppiraght {
+            padding: 20px 0;
             &__text { 
-            @include fontOutfit-white (20px);
+            @include fontOutfit-white (20px, 32px);
             }
         }
         &__word-oliv {
-           color:$colorOlive;
+        color:$colorOlive;
         }
-
     }
    
     .footer-media{
         &--wrap {
             display: flex;
             align-items: center;
-            
         }
         &__descr {
             padding: 25px;
@@ -137,7 +132,6 @@
             
 
             &-wrap {
-            // background:white;
             } 
             &-items {
                 padding: 25px 10px;

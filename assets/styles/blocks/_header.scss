@@ -1,10 +1,10 @@
 .header-attornest {
-    height: 295px;
     width: 100%;
     position: absolute;
          
     .container {
-    border: none
+    border: none;
+    // padding: 0 25px;
     }
     &__logo-block {
         border-bottom: 1px solid #4E555F;
@@ -14,9 +14,8 @@
     }
     &__logo {
         
-
         &-img {
-            padding: 36px 20px;
+            padding: 46px 20px;
         }
     }
     
@@ -25,14 +24,11 @@
         justify-content: space-between;
         align-items:center;
         width: 100%;
-
         border-bottom: 1px solid #4E555F;
-
     }
 
     &__nav{
         &--wrapp {
-        width: 59%;
         }
         
         &-list {
@@ -41,7 +37,7 @@
         }
         
         &-item {
-            padding: 35px 20px;
+            padding: 55px 20px;
             margin-right: 10px;
         }
         &-item:last-child {
@@ -60,31 +56,26 @@
             color:#D1B06B;
         }
     }
-}
-.header-attornest__info-block {
+    &__info-block {
     display:flex;
     align-items:center;
-    width: 40%;
+    }
 }
+
 .header-info {
     &__item {
-        width: 50%;
         display: flex;
         align-items:center;
-
-
+        gap: 10px;
     }
-    &--wrap  {
 
+    &--wrap  {
     }
     &__item-phone {
         display: flex;
         align-items:center;
-
     }
-    &__icon--wrap {
 
-    }
     &__block-circle {
         width: 62px;
         height: 62px;
@@ -96,7 +87,7 @@
     
     &__icon {
         max-width: 100%;
-        max-height: 100%px;
+        max-height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -116,26 +107,14 @@
         }}}
     
     &__descr--wrap {
-        padding: 10px;
-        
-        
+        width: 205px;
+        height: 62px;
     }
     &__text {
-        font-family: 'Outfit';
-        font-weight: 400;
-        font-size: 18px;
-        letter-spacing: 0.4px;
-        color: #D1B06B;
-        margin-bottom: 5px;
-
+        @include fontOutfit-oliv (18px, 29px);
     }
     &__phone-number, &__email {
-        font-family: 'Outfit';
-        font-weight: 400;
-        font-size: 22px;
-        letter-spacing: 0.4px;
-        color: #FFFFFF;
-
+        @include fontOutfit-white (22px, 26px);
     }
 }
 

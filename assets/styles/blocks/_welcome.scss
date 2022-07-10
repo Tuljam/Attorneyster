@@ -1,13 +1,14 @@
 .welcome {
     background-color: #161D27;
-    .container { 
+    .container {  
+        padding: 140px 40px;
     }
 
     &__block-grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr;
-        padding: 140px 35px;
+       
         gap: 20px 35px;
     }
     &__items {

@@ -3,12 +3,8 @@
     width: 350px;
     height: 85px;
     border: none;
-    font-family: $fontOutfit;
-    font-weight: 400;
-    font-size: 22px;
-    letter-spacing: 0.4px;
+    @include fontOutfit-white (22px);
     text-align: center;
-    color: #FFFFFF;
     transition: background-color, color 0.4s ease-in-out ;
     
     
@@ -22,9 +18,7 @@
     width: 269px;
     background-color: #D1B06B;
     }
-    // &--oliv:hover, &--oliv:focus {
-    // background-color: #7e7052;
-    // }
+   
     &--history {
     width: 302px;
     background-color: #D1B06B;
@@ -58,8 +52,11 @@
     &--get-in-center {
         background-color: white;
         width: 305px;
-        color: #3B434E;
+       
         margin: 25px auto 25px auto;
+        @include fontOutfit-oliv (25px);
+        font-weight: 700;
+        color: #3B434E;
     }
     &--get-in-center:hover {
         background-color: #7e7052;

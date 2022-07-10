@@ -2,15 +2,15 @@
         background: url(../images/background_history.jpg);
         background-size: cover;
     .container {
-     
-        
         padding: 140px 40px;
     }
-}
-.history-specialised--wrap {
+&--wrap {
     background:rgba(31, 39, 50, 0.85);
     @include flexCenter;
 }
+
+}
+
 .history-block {
     padding: 50px 60px 102px 60px;
     width: 40%;
@@ -50,9 +50,11 @@
     width: 20%;
     height: 100%;
     background: url(../images/background-fon.jpg);
-   
-
     }
+.history-specialised__main-picture {
+    width: 100%;
+    height: 900px;
+}
 .specialised-block {
     padding: 90px 60px 102px 60px;
     width: 40%;

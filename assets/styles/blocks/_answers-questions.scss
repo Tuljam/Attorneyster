@@ -1,19 +1,15 @@
 .answers-questions {
     background: $colorWtite;
     .container {
-        padding: 124px 20px 131px 20px;
+        padding: 124px 40px 131px 40px;
     }
     &__title--wrap {}
     
     &__title {
-        font-family: $fontCormorant;
-        font-weight: 400;
-        font-size: 45px;
-        letter-spacing: 0.4px;
+        @include fontCormorant-title (45px);
         text-transform: capitalize;
         color: #161D27;
         text-align: center;
-        margin: 0 374px 0 374px;
         }
 
     &__block-grid {
@@ -45,33 +41,23 @@
         }
 
         &-name {
-        font-family: $fontCormorant;
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 0.4px;
+        @include fontCormorant-title (30px);
         color: $colorBlack;
         margin-bottom: 10px;
-
         }
         &-position {
-        font-family: $fontOutfit;
-        font-weight: 400;
-        font-size: 20px;
-        letter-spacing: 0.4px;
-        color: $colorOlive ;
+        @include fontOutfit-oliv (20px)
         }
     }    
     &__media--wrap {
         width: 217px;
         height: 66px;
-        background: $colorWtite;
         position: relative;
-        bottom: 136px;
+        bottom: 120px;
         left: 104px;
         background-color: $colorWtite;
         transition: background-color 0.4s easy-in-out;
     }
-   
     &__media-list {
         display: flex;
         align-items:center;
@@ -85,7 +71,7 @@
         background-color: $colorOlive ;
     }
     &__media-link:hover {
-        .answers-questions__media-icon {path { fill: #1b6bdb;}}    
+        .answers-questions__media-icon {path { fill: rgb(204, 76, 53);}}    
     }
     &__media-icon {
         path { fill: #1F2732;}
@@ -93,8 +79,7 @@
 }
     .answers-questions__media-items:active {
 }
-   
-   
+
 
 
 

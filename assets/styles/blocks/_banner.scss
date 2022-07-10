@@ -6,14 +6,15 @@
         background-size: cover; 
         width: 100%;
     .container {
-        padding: 260px 25px 100px 25px;
+        padding: 343px 40px 0 40px;
+
 
     }
     &__block-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        padding: 100px 0 0 0;
+        padding: 100px 10px 0 10px;
     }
     &-item {
 
@@ -30,31 +31,16 @@
     }
     
         &__descr-title {
-        font-family: 'Cormorant Garamond';
-        font-weight: 400;
-        font-size: 65px;
-        line-height: 78px;
-        letter-spacing: 0.4px;
+            @include fontCormorant-title (65px);
+        line-height: 78px;;
         color: #FFFFFF;
         margin-bottom: 21px;
         }
         &__descr-text {
-        font-family: 'Outfit';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 40px;
-        letter-spacing: 0.4px;
-        color: #D1B06B;
-        margin-bottom: 28px;
-}
+            @include fontOutfit-oliv(22px,40px);
+            margin-bottom: 28px;
+        }
     }
-
-
-
-
-
-
-
 
 }
 
