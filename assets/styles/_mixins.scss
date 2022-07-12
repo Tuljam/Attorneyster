@@ -10,38 +10,31 @@
     
 }
 
-@mixin color ($color) {
-    color: $color;
-}
-
-
-@mixin fontOutfit-oliv ($fontSize, $lineHeight:0)   {
-font-family: $fontOutfit;
-font-weight: 400;
-font-size: $fontSize;
-line-height: $lineHeight;
-letter-spacing: 0.4px;
-color: $colorOlive;
-}
-@mixin fontOutfit-white ($fontSize, $lineHeight:0 )   {
+// @mixin color ($color) {
+//     color: $color;
+// }
+@mixin fontOutfit ($fontSize, $lineHeight:0, $c)   {
     font-family: $fontOutfit;
     font-weight: 400;
     font-size: $fontSize;
     line-height: $lineHeight;
     letter-spacing: 0.4px;
-    color: $colorWtite;
-    }
-@mixin fontCormorant-title ($fontSize)   {
+    color: $c;
+}
+
+@mixin fontCormorant-title ($fontSize, $c)   {
     font-family: $fontCormorant;
     font-weight: 400;
     font-size: $fontSize;
     letter-spacing: 0.4px;
+    color: $c;
     }
-    @mixin fontCormorant-text ($fontSize)   {
+    @mixin fontCormorant-text ($fontSize, $lineHeight:0, $c)   {
         font-family: $fontCormorant;
         font-weight: 400;
         font-size: $fontSize;
         letter-spacing: 0.4px;
         line-height: $lineHeight;
+        color: $c;
     
     }

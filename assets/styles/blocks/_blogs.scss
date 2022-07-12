@@ -4,8 +4,8 @@
         padding: 140px 40px 25px 40px;
     }
     &__title-main {
-        @include fontCormorant-title (45px);
-        color: $colorWtite;
+        @include fontCormorant-title (45px, $colorWtite);
+        // color: $colorWtite;
         text-align: center;
     }
     &__description--wrap {
@@ -32,22 +32,21 @@
 
 .info-block {
     &__note {
-        @include fontOutfit-oliv (21px);
+        @include fontOutfit (21px, 0, $colorOlive);
         padding: 10px 50px 10px 10px;
 }
 
     &__title {
-        color: #FFFFFF;
-        @include fontCormorant-title (45px);
+        // color: #FFFFFF;
+        @include fontCormorant-title (45px, $colorWtite);
         margin: 25px 0 21px 0;
     }
     &__text {
-        @include fontOutfit-white (21px, 32px);
+        @include fontOutfit (21px, 32px, $colorWtite);
         margin-bottom: 17px;
     }
     &__link {
-        @include fontOutfit-oliv (22px);
-        line-height: 17px;
+        @include fontOutfit (22px, 17px, $colorOlive);
         text-transform: capitalize;
         text-decoration: underline;
     }
@@ -87,20 +86,19 @@
         height: 367px;
         }
     &__subtitle {
-        @include fontOutfit-oliv (21px, 34px);
+        @include fontOutfit (21px, 34px, $colorOlive);
         margin: 10px 0;
     }
     &__title {
-        @include fontCormorant-title (30px);
-        color:$colorWtite;
+        @include fontCormorant-title (30px, $colorWtite);
         margin-bottom: 22px;
     }
     &__descr {
-        @include fontOutfit-white(20px, 32px);
+        @include fontOutfit (20px, 32px, $colorWtite);
         margin-bottom: 25px;
     }
     &__link-secondary {
-        @include fontOutfit-oliv(22px);
+        @include fontOutfit (22px, 0, $colorOlive);
         margin-bottom: 17px;
         text-decoration: underline;
     }

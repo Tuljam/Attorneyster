@@ -6,9 +6,8 @@
     &__title--wrap {}
     
     &__title {
-        @include fontCormorant-title (45px);
+        @include fontCormorant-title (45px,#161D27);
         text-transform: capitalize;
-        color: #161D27;
         text-align: center;
         }
 
@@ -41,12 +40,11 @@
         }
 
         &-name {
-        @include fontCormorant-title (30px);
-        color: $colorBlack;
-        margin-bottom: 10px;
+        @include fontCormorant-text (30px, 30px, $colorBlack);
+        // margin-bottom: 10px;
         }
         &-position {
-        @include fontOutfit-oliv (20px)
+        @include fontOutfit (20px, 30px, $colorOlive);
         }
     }    
     &__media--wrap {

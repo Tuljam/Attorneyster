@@ -3,7 +3,7 @@
     width: 350px;
     height: 85px;
     border: none;
-    @include fontOutfit-white (22px);
+    @include fontOutfit (22px, 0, white);
     text-align: center;
     transition: background-color, color 0.4s ease-in-out ;
     
@@ -54,9 +54,8 @@
         width: 305px;
        
         margin: 25px auto 25px auto;
-        @include fontOutfit-oliv (25px);
+        @include fontOutfit (25px, 0, #3B434E);
         font-weight: 700;
-        color: #3B434E;
     }
     &--get-in-center:hover {
         background-color: #7e7052;

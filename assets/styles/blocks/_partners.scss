@@ -17,7 +17,7 @@
 
     }
     &__title-text {
-    @include fontCormorant-title (50px);
+    @include fontCormorant-title (50px, $colorBlack);
     text-transform: capitalize;
     }
     

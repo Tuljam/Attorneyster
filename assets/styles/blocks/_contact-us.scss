@@ -17,15 +17,15 @@
         width: 50%;
     }
     &__title {
-        @include fontCormorant-title (45px);
+        @include fontCormorant-title (45px, $colorWtite);
         line-height: 58px;
         text-transform: capitalize;
-        color: #FFFFFF;
+        // color: #FFFFFF;
         margin-bottom: 8px;
     }
     &__descr {
-        @include fontOutfit-white (20px, 32px);
-        color: #D7D7D7;
+        @include fontOutfit (20px, 32px, #D7D7D7);
+        // color: #D7D7D7;
         margin-bottom: 37px;
     }
     &__offer--right-part {
@@ -42,8 +42,8 @@
         padding: 70px 37px 78px 27px;
     }
     &__title-secondary {
-        @include fontCormorant-title (42px);
-        color: #1F2732;
+        @include fontCormorant-title (42px,  #1F2732);
+        // color: #1F2732;
         margin-bottom: 12px;
     }
     &__descr--right-part {
@@ -73,12 +73,10 @@
         gap: 10px;
     }
     &__phon-text {
-        @include fontOutfit-white (18px, 22px);
-        color: #1F2732;
+        @include fontOutfit (18px, 22px, #1F2732);
         }
 
     &__phon-number {
-        @include fontOutfit-oliv (30px, 42px);
-        color: #1F2732;
-    }
+        @include fontOutfit (30px, 42px, #1F2732);
+        }
 }

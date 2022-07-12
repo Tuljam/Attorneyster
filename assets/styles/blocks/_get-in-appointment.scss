@@ -41,7 +41,11 @@
         border-top: none;
         border-bottom: 1px solid #3B434E;
         background: #1F2732;
-        @include fontOutfit-white (25px);
+        @include fontOutfit (25px, 0, $colorWtite);
+        &-message {
+            width: 100%;
+            padding: 100px 0;
+        }
     }
     &__message-area {
         width: 100%; 
@@ -49,24 +53,24 @@
     &__item--message-form {
     }
 }
-::-webkit-input-placeholder {
-    color: #FFFFFF;
-    font-family: $fontOutfit;
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 0.4px;
-}
-::-moz-placeholder {
-    color:#e22727;
-    font-family: $fontOutfit;
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 0.4px;
-}
-:-ms-input-placeholder {
-    color:#FFFFFF;
-    font-family: $fontOutfit;
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 0.4px;
-}
+// ::-webkit-input-placeholder {
+//     color: #FFFFFF;
+//     font-family: $fontOutfit;
+//     font-weight: 400;
+//     font-size: 25px;
+//     letter-spacing: 0.4px;
+// }
+// ::-moz-placeholder {
+//     color:#e22727;
+//     font-family: $fontOutfit;
+//     font-weight: 400;
+//     font-size: 25px;
+//     letter-spacing: 0.4px;
+// }
+// :-ms-input-placeholder {
+//     color:#FFFFFF;
+//     font-family: $fontOutfit;
+//     font-weight: 400;
+//     font-size: 25px;
+//     letter-spacing: 0.4px;
+// }

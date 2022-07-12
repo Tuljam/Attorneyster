@@ -26,7 +26,7 @@
 
     &__item {
         width: calc(100%/3);
-        // padding: 35px;    
+
     }
     &__item--center {
 
@@ -61,8 +61,7 @@
             &--pages{}
         }
         &__link {
-            @include fontCormorant-title (30px);
-            color: $colorWtite;
+            @include fontCormorant-title (30px, $colorWtite);
         }
 
         // start  footer-navigation__chapters--wrap
@@ -79,7 +78,11 @@
             &-block {
                 display: flex;
                 justify-content: flex-start;
-                width: calc(100%/4);
+                width: 25%;
+
+                &--wide {
+                    width: 25%;
+                }
             }
             &-list {
                 padding: 20px ;
@@ -91,7 +94,7 @@
                 padding: 20px 20px 85px 20px ;
             }
             &-link {
-                @include fontOutfit-white (20px);
+                @include fontOutfit (20px, 0, $colorWtite);
             }
         }
     }
@@ -106,7 +109,7 @@
         &-coppiraght {
             padding: 20px 0;
             &__text { 
-            @include fontOutfit-white (20px, 32px);
+            @include fontOutfit (20px, 32px, $colorWtite);
             }
         }
         &__word-oliv {
@@ -123,7 +126,7 @@
             padding: 25px;
             }
         &__text {
-            @include fontOutfit-oliv (20px);
+            @include fontOutfit (20px, 0, $colorOlive);
         }
         &__list {
             display: flex;
@@ -150,9 +153,10 @@
             }
         }   
     }
-}
-.footer-media__list-icon {
+    &__list-icon {
     path {
         fill:#FFFFFF;
+        }
     }
 }
+

@@ -15,8 +15,6 @@
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 1fr;
-        // padding: 100px 10px 0 10px;
-   
     }
     &-item {
 
@@ -34,13 +32,12 @@
     }
     
         &__descr-title {
-            @include fontCormorant-title (65px);
+        @include fontCormorant-title (65px, $colorWtite);
         line-height: 78px;;
-        color: #FFFFFF;
         margin-bottom: 21px;
         }
         &__descr-text {
-            @include fontOutfit-oliv(22px,40px);
+            @include fontOutfit (22px,40px, $colorOlive);
             margin-bottom: 28px;
         }
     }

@@ -111,10 +111,10 @@
         height: 62px;
     }
     &__text {
-        @include fontOutfit-oliv (18px, 29px);
+        @include fontOutfit (18px, 29px, $colorOlive);
     }
     &__phone-number, &__email {
-        @include fontOutfit-white (22px, 26px);
+        @include fontOutfit(22px, 26px, $colorWtite);
     }
 }
 
