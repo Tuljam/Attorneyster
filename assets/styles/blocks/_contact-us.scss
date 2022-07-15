@@ -62,11 +62,24 @@
         width: 70px;
         height: 70px;
         padding: 22px;
-
+        &:hover {
+            transform: scale(1.2, 1.2);
+            cursor: pointer;
+            .contact-us__phon-img { path 
+                { fill:#7e7052;}
+            }
+        }
     }
+
+    
     &__phon-img {
         width: 27px;
         height: 27px;
+        path { fill:$colorWtite;}  
+        
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
     }
     &__phon-descr {
         @include flexColumn;
@@ -78,5 +91,8 @@
 
     &__phon-number {
         @include fontOutfit (30px, 42px, #1F2732);
+        &:hover {
+            color:#7e7052;;
+        }
         }
 }

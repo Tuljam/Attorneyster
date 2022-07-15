@@ -2,6 +2,7 @@
     
     .container {
         padding: 124px 40px 82px 40px;
+
     }
     &__description {}
 
@@ -55,19 +56,34 @@
         text-align: center;
         }
     
+    &__list-icon--wrap:hover {
+     transform: scale(1.3, 1.3);   
+
+    }
     &__list-icon {
         width: 22px;
         height: 20px;
         path {
             fill: #D1B06B ;
         }
-        text-shadow: blue 5px 5px ;   
+ 
     }
     &__list-icon--star {
     width: 25px;
     height: 24px;
     }
+    &__list-icon--star:hover {
+        
+    }
    
+    &__list-picture--wrap:hover {
+        .results__list-icon {
+            path {
+            fill: rgb(150, 62, 62) ;
+        } }
+        cursor: pointer;
+    }
+    
 
     &__list-quantity {
         font-family: $fontOutfit;
@@ -112,9 +128,3 @@
     }
 }
     
-.results__list-picture--wrap:hover {
-    .results__list-icon {
-        path {
-        fill: rgb(150, 62, 62) ;
-    } }
-}

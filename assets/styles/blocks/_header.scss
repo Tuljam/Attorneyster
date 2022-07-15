@@ -4,15 +4,17 @@
          
     .container {
     border: none;
-    // padding: 0 25px;
+    
     }
     &__logo-block {
+        padding: 40px 0;
         border-bottom: 1px solid #4E555F;
         display: flex;
         justify-content:space-between;
         align-items:center;
     }
-    &__logo {
+    &__logo:hover {
+        cursor: pointer;
         
         &-img {
             padding: 46px 20px;
@@ -97,25 +99,34 @@
         transition: color 0.3s ease-in-out;
         }
     
-    &__icon:hover {
+    &__icon-link:hover {
         cursor: pointer;
+
     }
     &__block-circle:hover {
-    border-color: blue ;
+    border-color: $colorWtite;
+    transform: scale(1.2, 1.2);
         .header-info__icon {
         path {fill: #D1B06B ;
+            
         }}}
     
     &__descr--wrap {
         width: 205px;
         height: 62px;
     }
-    &__text {
+    &__text-link {
         @include fontOutfit (18px, 29px, $colorOlive);
+       
     }
-    &__phone-number, &__email {
+    &__phone-number, &__email-link {
         @include fontOutfit(22px, 26px, $colorWtite);
+        &:hover {
+            color: $colorOlive;
+            transform: scale(1.2, 1.15);
+        }
     }
+   
 }
 
 .active {

@@ -2,7 +2,7 @@
     background: $colorWtite;
     .container {
         padding: 124px 40px 131px 40px;
-    }
+        }
     &__title--wrap {}
     
     &__title {
@@ -17,7 +17,7 @@
         grid-template-rows: 1fr;
         gap: 30px;
         flex-wrap: wrap;
-    }
+        }
     &__items {
         width: 100%;
         // border: 1px dashed red;
@@ -27,34 +27,40 @@
             flex-direction: column;
             align-items:center;
             justify-content: space-evenly; 
-        }
-    }
+            position: relative;
+             &:hover .answers-questions__media--wrap {
+                display: block;
+            }
+        }}
         &__attorney { 
-        &-photo {
+            background-color: $colorOlive;
+                
+            &-photo {
             width: 100%;
             }
-        &-img {
+            &-img {
             width: 100%;
-        }
-        &-name--wrap {
+            }
+            &-name--wrap{}
+
+            &-name {
+            @include fontCormorant-text (30px, 30px, $colorBlack);
+            // margin-bottom: 10px;
+            }
+            &-position {
+            @include fontOutfit (20px, 30px, $colorOlive);
+            }
         }
 
-        &-name {
-        @include fontCormorant-text (30px, 30px, $colorBlack);
-        // margin-bottom: 10px;
-        }
-        &-position {
-        @include fontOutfit (20px, 30px, $colorOlive);
-        }
-    }    
+     
+
     &__media--wrap {
+        display: none;
         width: 217px;
         height: 66px;
-        position: relative;
-        bottom: 120px;
-        left: 104px;
-        background-color: $colorWtite;
-        transition: background-color 0.4s easy-in-out;
+        position: absolute;
+        bottom: 72px;
+        left: 95px;
     }
     &__media-list {
         display: flex;
@@ -62,8 +68,8 @@
         justify-content: space-evenly;
         padding: 20px;
         border: 3px solid $colorOlive;
-        background-color: $colorWtite;
-        transition: background-color 0.4s easy-in-out;
+        background-color: $colorOlive;
+        transition: background-color 0.2s easy-in-out;
     }
     &__media-list:hover {
         background-color: $colorOlive ;

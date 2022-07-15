@@ -31,14 +31,16 @@
     }
     &__item {
     padding: 45px;
-    transition: path 0.7s easy-in-out;
     }
 
 }
-.partners__item:active {
+.partners__item:active, .partners__item:hover {
     .partners__icon {path {fill:rgb(150, 62, 62);} }
-    } 
+    cursor: pointer;
+    transform: scale(1.3, 1.3);
+} 
 
 .partners__icon {
-        path {fill:#B1B1B1;}
+        path {fill:#B1B1B1;
+             transition: path 0.5s easy-in-out;}
     }

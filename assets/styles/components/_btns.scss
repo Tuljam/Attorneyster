@@ -13,6 +13,8 @@
     }
     &--grey:hover, &--grey:focus, &--oliv:hover, &--oliv:focus {
         background-color: #5e543f;
+        color:$colorOlive;
+        transform: scale(1.1, 1.1);
     }
     &--oliv {
     width: 269px;
@@ -94,6 +96,11 @@
     &--blogs {
         width: 100%;
         margin: 26px 0 0 0; 
+    }
+    &--results {
+        width: 100%;
+        border-color: rgb(223, 215, 215);
+        margin: 80px 0 0 0;
     }
 }
 

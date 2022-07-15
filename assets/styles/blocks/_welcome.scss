@@ -1,166 +1,137 @@
 .welcome {
     background-color: #161D27;
     .container {  
-        padding: 140px 40px;
+        padding: 70px 40px;
     }
 
     &__block-grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr;
-       
         gap: 20px 35px;
     }
     &__items {
         // border: 1px dashed red;
 
-        // margin-bottom: 32px;
-        // margin-right: 62px;
-        
-            &-imgTop {
-            grid-row-start: 1;
-            grid-column-start: 1;
-            }
+    &-imgTop {
+        grid-row: 1;
+    }
     
-            &-photo {}
+    &-photo {}
             
-            &-imgBottom {
-                grid-row-start: 2;
-                grid-column-start: 1;
-            }
-            .welcome__items-photo {
+    &-imgBottom {
+        grid-row: 2;
+    }
+    
+    &__items-photo {}
+                  
+    &__items-descr {
+        padding:20px 15px 5px 20px ;
+    }
+    }
 
-            }
-        }            
-.welcome__items-descr {
-                padding:20px 15px 5px 20px ;
-                grid-row-start: 1;
-                grid-column-start: 2;
+    &__items-title {
+        @include fontCormorant-title (45px, $colorWtite);
+        line-height: 58px;
+        text-transform: capitalize;
+        margin-bottom: 11px;
+        }
 
-            }
-
-
-.welcome__items-title {
-                font-family: $fontCormorant;
-                font-weight: 400;
-                font-size: 45px;
-                line-height: 58px;
-                text-transform: capitalize;
-                color: #FFFFFF;
-                margin-bottom: 11px;
-            }
-
-.welcome__frame {
+    &__frame {
     margin-bottom: 40px;
-
-            }
+        }
             
-.welcome__items-text {
-                font-family: $fontOutfit;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 32px;
-                letter-spacing: 0.4px;
-                color: #D7D7D7;
-            }
+    &__items-text {
+    @include fontOutfit (20px, 32px, #D7D7D7);
+        }
 
-.welcome__items-mainAttorney {
-    grid-row-start: 2;
-    grid-column-start: 2;
-display: flex;
-flex-direction: column;
-padding: 10px;
-            }
-
-}
-    
-.welcome__repsesent {
+    &__items-mainAttorney {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+        }
+    &__repsesent {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 17px 0 45px 0;
+    }
 }
-.represent__photo-mainAttorney--wrap {
+
+.represent {
+    &__photo-mainAttorney--wrap {
     padding-right: 15px;
+    }
+    &__photo-mainAttorney {} 
+    
+    &__name-mainAttorney {
+    @include fontCormorant-title (40px, $colorWtite);
+    }
 }
 
 
-.represent__photo-mainAttorney {} 
-
-.represent__name-mainAttorney {
-    font-family: $fontCormorant;
-    font-weight: 400;
-    font-size: 40px;
-    letter-spacing: 0.4px;
-    color: #FFFFFF;
-
-}
-
-.welcome__blocks {
+.welcome {
+    &__blocks {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
-
-}
-
-.welcome__block {
-
+    }
+    &__block {
     width: 315px;
     height: 126px;
     padding: 36px 40px;
     display: flex;
     justify-content: space-around;
     text-align: start;
-}
-.welcome__block-success {
+    }
+    &__block-success {
     background: #4e5866;
+    }
+    &__block-experience {
+        background: #D1B06B;
+        display: flex;   
+    }
+
 }
 
-.block-succes__img {
+.block {
+    &-succes__img {}
+    &-success__icon {}
 
-}
+    &__descr {
+        &--succes {}
 
-.block-success__icon {}
+        &--experience {}
 
-.block__descr {}
-
-.block__descr--succes {}
-
-.block__descr--experience {
-   
-}
-
-.block-descr__text {
-    font-family: $fontOutfit;
-    font-weight: 400;
-    font-size: 22px;
-    letter-spacing: 0.4px;
-    color: #D7D7D7;
-}
-.block-descr__text--black {
-    color: black;
-}
-
-
-.welcome__block-experience {
-    background: #D1B06B;
-    display: flex;
+        &__text {
+            @include fontOutfit (22px, 0,#D7D7D7);
+        }
+        &__text--black {
+            color: black;
+        }    
+    }
+    &-experience--blue-color {
+        width: 81px;
+        height: 59px;
+        background: #1F2732;
+        padding: 15px 0 15px 0;
+        border-radius: 10%;
+    }
+    
+    &-experience__icon {
+        width: 100%;
+        height: 100%;
+    }
     
 
 }
 
-.block-experience--blue-color {
-    width: 81px;
-    height: 59px;
-    background: #1F2732;
-    padding: 15px 0 15px 0;
-    border-radius: 10%;
 
-}
 
-.block-experience__icon {
-    width: 100%;
-    height: 100%;
-}
+
+
+
+
+
 
 
