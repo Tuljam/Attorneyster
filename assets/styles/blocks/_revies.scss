@@ -24,9 +24,11 @@
     }
     &__items {
         // border: 1px dashed red;
+       
         &-clientNatasha {
             grid-row-start: 1;
             grid-column: 1;
+           
         }
         &-clientHanna {
             grid-row-start: 1;
@@ -46,8 +48,13 @@
             padding: 52px 45px 80px 37px;
             margin-bottom: 20px;
             border-radius: 0 0 0 40px;
+            transition: all 0.8s ease;
+          
         }
         
+         &-post--wrap:hover {
+            transform: scale(1.1, 1.1);
+         }
 
         &-post--wrap-topRadius {
             border-radius: 40px 0 0 0;

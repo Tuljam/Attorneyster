@@ -883,6 +883,12 @@ a {
   padding: 52px 45px 80px 37px;
   margin-bottom: 20px;
   border-radius: 0 0 0 40px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.revies__items-post--wrap:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .revies__items-post--wrap-topRadius {
   border-radius: 40px 0 0 0;
@@ -1317,6 +1323,13 @@ div.revies__items-client--wrap-bottom {
 .blogs-post__picture {
   width: 100%;
   height: 367px;
+  display: inline-block;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.blogs-post__picture:hover {
+  -webkit-transform: scale(-1, 1.1);
+          transform: scale(-1, 1.1);
 }
 .blogs-post__subtitle {
   font-family: "Outfit", sans-serif;
@@ -1529,7 +1542,7 @@ div.revies__items-client--wrap-bottom {
   padding: 25px 10px;
 }
 .footer-media__list-link:hover .footer-media__list-icon path {
-  fill: rgb(204, 76, 53);
+  fill: #D1B06B;
 }
 .footer-media__list-icon path {
   fill: #FFFFFF;
